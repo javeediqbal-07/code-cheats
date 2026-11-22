@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Cheats | Programming Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">⚡ Code<span>Cheats</span></div>
+        <a href="#languages" class="nav-link">Languages</a>
+    </nav>
+
+    <section class="hero">
+        <p class="tag">PROGRAMMER'S TOOLKIT</p>
+        <h1>Code Smarter,<br><span>Not Harder.</span></h1>
+        <p class="subtitle">
+            Your quick programming reference. Find syntax, examples
+            and coding shortcuts in one place.
+        </p>
+
+        <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="searchInput"
+                   placeholder="Search languages or code examples...">
+        </div>
+    </section>
+
+    <section class="languages-section" id="languages">
+        <div class="section-heading">
+            <h2>Programming Languages</h2>
+            <p>Select a language to explore its cheat codes.</p>
+        </div>
+
+        <div class="cards" id="languageCards">
+
+            <div class="card" data-language="python" onclick="showCode('python')">
+                <span class="card-icon">🐍</span>
+                <h3>Python</h3>
+                <p>Simple & powerful programming</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+            <div class="card" data-language="java" onclick="showCode('java')">
+                <span class="card-icon">☕</span>
+                <h3>Java</h3>
+                <p>Object-oriented programming</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+            <div class="card" data-language="c" onclick="showCode('c')">
+                <span class="card-icon">💻</span>
+                <h3>C Programming</h3>
+                <p>Fundamentals & syntax</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+            <div class="card" data-language="cpp" onclick="showCode('cpp')">
+                <span class="card-icon">🚀</span>
+                <h3>C++</h3>
+                <p>Fast & versatile programming</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+            <div class="card" data-language="html" onclick="showCode('html')">
+                <span class="card-icon">🌐</span>
+                <h3>HTML & CSS</h3>
+                <p>Web design fundamentals</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+            <div class="card" data-language="javascript" onclick="showCode('javascript')">
+                <span class="card-icon">⚡</span>
+                <h3>JavaScript</h3>
+                <p>Interactive web development</p>
+                <span class="card-bottom">Explore cheats →</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="codeSection" class="code-section hidden">
+        <button class="back-button" onclick="goBack()">← Back to Languages</button>
+
+        <div class="code-heading">
+            <span id="languageIcon">💻</span>
+            <h2 id="languageTitle">Language</h2>
+            <p id="languageDescription">Quick reference codes</p>
+        </div>
+
+        <div class="search-box code-search">
+            <span>🔍</span>
+            <input type="text" id="codeSearch"
+                   placeholder="Search code examples...">
+        </div>
+
+        <div id="codeArea" class="code-grid"></div>
+    </section>
+
+    <footer>
+        <h3>⚡ CodeCheats</h3>
+        <p>Learn. Code. Refer.</p>
+        <p class="copyright">Programming made simple.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
